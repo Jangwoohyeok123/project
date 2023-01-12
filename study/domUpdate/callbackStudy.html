@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>eventListenr study</title>
+  <link rel="shortcut icon" href="./icons8-가와이-브로콜리-16.png">
+</head>
+
+<body>
+  <div class="study1">hello</div>
+  <script>
+    const div = document.querySelector(".study1");
+    div.addEventListener("click", (event) => {
+      if (div.innerHTML === "hello") {
+        div.innerText = "바뀜";
+        console.log(event);
+      } else {
+        div.innerHTML = "hello";
+      }
+    })
+  </script>
+</body>
+
+</html>
